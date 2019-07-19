@@ -1,0 +1,8 @@
+<p>component1 works!</p>
+
+<input type="text" [(ngModel)]="greetingMessage">
+<button type="submit" (click)="onSendText()">Send Text</button>
+<div *ngIf=childText>
+    {{'DATA FROM CHILD '+childText}}
+</div>
+<app-component2 [parentData]="greeting" (textEvent)="eventHandler($event)"></app-component2>

@@ -1,0 +1,9 @@
+app-left {
+    float: left;
+    width: 24%;
+}
+
+app-right {
+    float: right;
+    width: 74%;
+}
